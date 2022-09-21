@@ -19,6 +19,7 @@ class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<Mai
                 textViewUserEmail.text = user.email
                 Glide.with(imageViewAvatar.context)
                     .load(user.avatar)
+                    .placeholder(R.drawable.user)
                     .into(imageViewAvatar)
             }
         }

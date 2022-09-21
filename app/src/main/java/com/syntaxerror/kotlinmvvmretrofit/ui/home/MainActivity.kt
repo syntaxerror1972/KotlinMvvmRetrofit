@@ -12,7 +12,7 @@ import com.syntaxerror.kotlinmvvmretrofit.R
 import com.syntaxerror.kotlinmvvmretrofit.api.ApiHelper
 import com.syntaxerror.kotlinmvvmretrofit.api.RetrofitBuilder
 import com.syntaxerror.kotlinmvvmretrofit.data.model.User
-import com.syntaxerror.kotlinmvvmretrofit.data.repository.ViewModelFactory
+import com.syntaxerror.kotlinmvvmretrofit.data.repository.UserViewModelFactory
 import com.syntaxerror.kotlinmvvmretrofit.utils.Status
 import com.syntaxerror.kotlinmvvmretrofit.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setupViewModel() {
-        viewModel = ViewModelProviders.of(this, ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+        viewModel = ViewModelProviders.of(this, UserViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
         ).get(UserViewModel::class.java)
     }
 
