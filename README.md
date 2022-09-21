@@ -2,13 +2,12 @@ Android's MVVM Architecture in Kotlin ft. Retrofit
 
 This is an example to demonstrate MVVM Architecture in Kotlin with Retrofit in Android.
 
-This example will demonstrate the working of MVVM using Live data and Retrofit in Kotlin. Just follow the steps and you will be able to try out the same in your Android Studio as well.
+This example will demonstrate the working of MVVM using Live data and Retrofit in Kotlin. 
 
 So Let's Get Started:
 
 What is MVVM, LiveData, ViewModel, Model, Repository?
-Implementation Step-by-Step
-Conclusion
+
 1. What is MVVM, LiveData, ViewModel, Model, Repository?
 Answer: Let's see what are the important concepts in MVVM.
 
